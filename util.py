@@ -31,6 +31,7 @@ def load_ckpt(saver, sess, log_root,ckpt_dir="train"):
   """Load checkpoint from the ckpt_dir (if unspecified, this is train dir) and restore it to saver and sess, waiting 10 secs in the case of failure. Also returns checkpoint name."""
   while True:
     try:
+      tf.logging.info("loading from %s.", ckpt_dir)
       latest_filename = "checkpoint_best" if ckpt_dir=="eval" else None
       ckpt_dir = os.path.join(log_root, ckpt_dir)
       ckpt_state = tf.train.get_checkpoint_state(ckpt_dir, latest_filename=latest_filename)
