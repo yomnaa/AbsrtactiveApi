@@ -1,0 +1,10 @@
+scipy
+numpy
+tensorflow==1.4
+flask
+gunicorn
+flask_cors
+nltk
+tldextract
+beautifulsoup4
+bs4
