@@ -22,7 +22,6 @@ import tensorflow as tf
 import beam_search
 import data
 import json
-import pyrouge
 import util
 import logging
 import numpy as np
