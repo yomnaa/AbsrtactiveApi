@@ -35,15 +35,10 @@ def api():
         app.logger.info("article text: " + articles[-1])
         i+=1
 
-    summaries= model_api(articles)
-    # i=0
+    #summaries= model_api(articles)
+    
     app.logger.info("summariescount: " + str(len(summaries))+" "+str(len(articles)))
-    # for summary in summaries:
-    #     open('sum'+str(i)+'.txt','w').write(summary)
-    #     i+=1
-    # app.logger.info("summarized article text: " + output_data)
 
-    # response = jsonify(summaries)
     response = jsonify(summaries)
     return response
 
