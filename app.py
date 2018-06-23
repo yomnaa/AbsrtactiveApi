@@ -35,7 +35,7 @@ def api():
         app.logger.info("article text: " + articles[-1])
         i+=1
 
-    #summaries= model_api(articles)
+    summaries= model_api(articles)
     
     app.logger.info("summariescount: " + str(len(summaries))+" "+str(len(articles)))
 
