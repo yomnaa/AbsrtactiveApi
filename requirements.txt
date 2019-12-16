@@ -1,6 +1,6 @@
 scipy
 numpy
-tensorflow==1.4
+tensorflow==1.15.0
 flask
 gunicorn
 flask_cors
